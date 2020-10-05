@@ -1,4 +1,5 @@
 images
 old_pngs
 
+.DS_Store
 *.png
