@@ -18,5 +18,5 @@ for file in ${list[@]}; do
   optimized_size=`wc -c ${file} | awk '{print $1}'`
   optimized_rate=`echo "scale=2; $optimized_size / $file_size * 100" | bc`
 
-  echo "${file}  ${file_size} byte ===> ${optimized_size} byte (${optimized_rate})"
+  echo "${file}  ${file_size} bytes ===> ${optimized_size} bytes (${optimized_rate})"
 done
